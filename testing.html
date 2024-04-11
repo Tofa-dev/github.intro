@@ -1,0 +1,386 @@
+<!DOCTYPE html
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen Foods Store</title>
+    <!-- Add any necessary CSS styles here -->
+    <style>
+        /* CSS styles can be added here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        /* Style for the main content area */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Style for the product display */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Style for individual product cards */
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        /* Style for purchase button */
+        .purchase-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Style for footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: white;
+            text-shadow: 1px 1px 1px black, 0 0 25px tomato, 0 0 5px red;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+        .active {
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WELCOME TO LIZARONK VENTURES</h1>
+    </header>
+
+<ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="products">Products</a></li>
+    <li><a href="contact">Contacts</a></li>
+    <li><a href="about">About</a></li>
+</ul>    
+    
+
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="products">
+            <!-- Product Cards -->
+            <!-- You can add product details and images here -->
+            <div class="product-card">
+                <form action="FILE 1.html">
+                <h3><img src="kote.png" alt="KOTE"></h3>
+                <p> Kote <br>
+                  price per KG $10.99</p>
+                  <label for="quantity1">Quantity:</label>
+                  <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                  <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+  
+                </form>
+            </div>
+            <div class="product-card">
+                <h3><img src="titus.jpeg" alt="Titus"></h3>
+                <p>Titus<br>
+                   Price per KG $8.49</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="shawa.jpeg" alt="Shawa"></h3>
+                <p>Shawa<br>
+                   Price per KG 10.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="Panla.jpeg" alt="PANLA"></h3>
+                <p>Panla<br>
+                   Price per KG $5.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+     
+            </div>
+            <div class="product-card">
+                <h3><img src="Hake.jpeg" alt="HAKE"></h3>
+                <p>Hake<br>
+                   Price per KG $10.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="ojuyobo.jpeg" alt="OJUYOBO"></h3>
+                <p>Ojuyobo<br>
+                   Price per KG $10.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="mullet.jpeg" alt="Mullet"></h3>
+                <p>Mullet<br>
+                   Price per KG $12.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="red bait.jpeg" alt="REDBAIT"></h3>
+                <p>Redbait<br>
+                   Prrice per KG $12.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="owere fish.jpeg" alt="OWERE"></h3>
+                <p>Owere<br>
+                   Price per KG $12.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="Tilapia.jpeg" alt="TILAPIA"></h3>
+                <p>Tilapia<br>
+                   Price per KG $12.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <div class="product-card">
+                <h3><img src="ROCK" alt="ROCK"></h3>
+                <p>Rock<br>
+                   Price per KG $12.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <div class="product-card">
+                <h3><img src="saithe.jpeg" alt="SAITHE"></h3>
+                <p>Saithe<br>
+                   Price per KG $12.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <div class="product-card">
+                <h3><img src="croaker.jpeg" alt="CROACKER"></h3>
+                <p>Croacker<br>
+                   Prrice per KG $12.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <!--Don't forget and header for "TURKEY SECTION"-->
+            <div class="product-card">
+                <h3><img src="Turkey.jpeg" alt="TURKEY"></h3>
+                <p>Turkey<br>
+                   Price per KG $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <div class="product-card">
+                <h3><img src="chcken laps.jpeg" alt="LAPS"></h3>
+                <p>Laps<br>
+                   Price per KG $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="chicken laps orobo.jpeg" alt="OROBO LAPS"></h3>
+                <p>Orobo Laps<br>
+                   Price per KG $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="chicken wings.jpeg" alt="CHICKEN WINGS"></h3>
+                <p>Chicken Wings<br>
+                   Price per KG $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+      
+
+            </div>
+            <div class="product-card">
+                <h3><img src="chicken chest.jpeg" alt="CHICKEN CHEST"></h3>
+                <p>Chicken Chest<br>
+                   Price per KG $15.00</p>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+
+
+            </div>
+            <div class="product-card">
+                <h3><img src="full chicken.jpeg" alt="FULL CHICKEN"></h3>
+                <p>Full Chicken<br>
+                   Price per KG $15.00s</p>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+
+            </div>
+            <div class="product-card">
+                <h3><img src="Fryer" alt="FRYER"></h3>
+                <p>Fryer<br>
+                   Price per KG $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+            </div>
+            <div class="product-card">
+                <h3><img src="Finger" alt="FINGERS"></h3>
+                <p>Fingers<br>
+                   Price per KG $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <div class="product-card">
+                <h3><img src="nigerian chicken.jpeg" alt="NIGERIAN CHICKEN"></h3>
+                <p>Nigerian Chicken<br>
+                   Price per KG $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <div class="product-card">
+                <h3><img src="Gizzard.jpeg" alt="GIZZARD"></h3>
+                <p>Gizzard<br>
+                   Price per KG</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+            <div class="product-card">
+                <h3><img src="sadia sausage.jpeg" alt="SADIA"></h3>
+                <p>Sadia<br>
+                   Price per Pack $15.00</p>
+                   <label for="quantity1">Quantity:</label>
+                   <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                   <button class="purchase-btn" onclick="addToCart('Product 1', 10.99, 'quantity1')">Add to Cart</button>
+   
+
+            </div>
+        
+                
+            </div>
+
+            
+            <!-- Add more product cards as needed -->
+        </div>
+    </div>
+      <!--dont forget to add the java script module for the add to cart function-->
+       
+    <footer>
+        <p>&copy; Lizaronk ventures</p>
+    </footer>
+
+    <!-- Add any necessary scripts for purchase functionality -->
+    <script>
+        // JavaScript for the purchase functionality would  be added here
+        // This would involve integrating a payment gateway or backend system
+        // For the sake of simplicity, a complete purchase functionality isn't implemented here
+        // This is just the basic structure for the webpage
+    </script>
+    <script>4
+        function addToCart(productName, price, quantityId) {
+            var quantity = document.getElementById(quantityId).value;
+            alert('Added to cart: ' + quantity + ' x ' + productName + ' - Total: $' + (price * quantity).toFixed(2));
+        }
+    </script>
+
+
+</body>
+
+</html> 
